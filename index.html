@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Krish Ajay Tiwari - Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+        }
+        .dark {
+            background: #0f172a;
+            color: #f1f5f9;
+        }
+        .card {
+            background: #1e293b;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+        header {
+            background: #1652f8;
+        }
+        nav a {
+            color: #f8fafc;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #93c5fd;
+        }
+        footer {
+            background-color: #1d4ed8;
+            color: #cbd5e1;
+        }
+        a {
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #60a5fa;
+        }
+
+        .light-mode {
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+
+        .light-mode header{
+            background-color: #bae6fd;
+        }
+        .light-mode nav a{
+            color: #0f172a;
+        }
+        .light-mode nav a:hover {
+            color: #6ee7b7;
+        }
+        .light-mode .card{
+            background-color: #ffffff;
+            color: #0f172a;
+             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .light-mode .card:hover {
+             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .light-mode footer{
+            background-color: #e0f2fe;
+            color: #0f172a;
+        }
+
+    </style>
+</head>
+<body class="dark">
+  <header class="py-6 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-white">Krish Ajay Tiwari</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#role-model">Role Model</a>
+        <a href="#goals">Dreams</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="flex items-center">
+        <button id="theme-toggle" class="text-white text-xl focus:outline-none">🌓</button>
+        <button id="menu-toggle" class="md:hidden text-white text-3xl focus:outline-none ml-4">☰</button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 mt-4 space-y-2 text-center">
+      <a href="#about" class="block text-white">About</a>
+      <a href="#achievements" class="block text-white">Achievements</a>
+      <a href="#hobbies" class="block text-white">Hobbies</a>
+      <a href="#role-model" class="block text-white">Role Model</a>
+      <a href="#goals" class="block text-white">Dreams</a>
+      <a href="#contact" class="block text-white">Contact</a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12 space-y-16">
+    <section id="about" class="text-center">
+      <img src="images/img2.jpg" alt="Krish" class="mx-auto w-36 h-36 rounded-full border-4 border-blue-600 shadow-lg object-cover"/>
+      <h2 class="text-4xl font-bold mt-6 mb-2 text-blue-400">Hello, I'm Krish Ajay Tiwari</h2>
+      <p class="text-lg max-w-2xl mx-auto">
+        I'm an aspiring engineer with a passion for learning and creating impactful digital experiences.
+ I thrive on curiosity, innovation, and collaboration.
+      </p>
+    </section>
+
+    <section id="achievements">
+      <h2 class="text-3xl font-semibold text-center mb-8 text-blue-400">Achievements</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-6 text-center">
+          <h3 class="text-xl font-bold mb-2 text-blue-300">Certifications</h3>
+          <p>• Cyber Security<br/>• Semiconductor Devices<br/>• DSA</p>
+        </div>
+        <div class="card p-6 text-center">
+          <h3 class="text-xl font-bold mb-2 text-blue-300">Events</h3>
+          <p>• SIP Hackathon<br/>• SJCEM Code Relay</p>
+        </div>
+        <div class="card p-6 text-center">
+          <h3 class="text-xl font-bold mb-2 text-blue-300">Projects</h3>
+          <p>• Landrover using esp32</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies" class="text-center">
+      <h2 class="text-3xl font-semibold mb-6 text-blue-400">My Hobbies</h2>
+      <p class="text-lg max-w-3xl mx-auto leading-relaxed">
+        • Learning about new tech trends<br/>
+        • Analyzing different technical projects<br/>
+        • Watching and analyzing cricket matches<br/>
+        • Reading motivational books and biographies
+      </p>
+    </section>
+
+    <section id="role-model" class="text-center">
+      <h2 class="text-3xl font-semibold mb-6 text-blue-400">My Role Model</h2>
+      <p class="text-lg max-w-3xl mx-auto">
+        My role model is <strong class="text-blue-300">Elon Musk</strong>. Elon Musk is a visionary entrepreneur and the CEO of SpaceX, Tesla, and xAI. Known for his leadership in advancing artificial intelligence, he also heads Neuralink and The Boring Company.
+      </p>
+    </section>
+
+    <section id="goals" class="text-center">
+      <h2 class="text-3xl font-semibold mb-6 text-blue-400">My Dreams</h2>
+      <p class="text-lg max-w-3xl mx-auto">
+        My dream is to become a tech innovator and create solutions that empower people and businesses.
+I aspire to work with cutting-edge technologies and contribute to impactful projects globally.
+      </p>
+    </section>
+
+    <section id="repos" class="text-center mt-12">
+      <h2 class="text-3xl font-semibold text-blue-400 mb-6">My GitHub Projects</h2>
+      <ul id="github-repos" class="space-y-3 text-lg text-blue-200 max-w-2xl mx-auto"></ul>
+    </section>
+
+    <section id="contact" class="text-center">
+      <h2 class="text-3xl font-semibold mb-6 text-blue-400">Connect with Me</h2>
+      <div class="space-y-3 text-lg">
+        <a href="tel:+917709670074" class="text-blue-300 hover:underline block">📞 +91 7709670074</a>
+        <a href="mailto:tiwarikrish205@gmail.com" class="text-blue-300 hover:underline block">📧 tiwarikrish205@gmail.com</a>
+        <a href="https://wa.me/7709670074" class="text-blue-300 hover:underline block" target="_blank">💬 WhatsApp</a>
+        <a href="https://www.linkedin.com/in/krish-tiwari-b40983283/" class="text-blue-300 hover:underline block" target="_blank">🔗 LinkedIn</a>
+        <a href="https://github.com/krishxtiwari" class="text-blue-300 hover:underline block" target="_blank">💻 GitHub</a>
+        <iframe src="https://maps.google.com/maps?q=Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed" class="w-full h-64 mt-4 rounded-md border border-blue-700"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 text-sm">
+    <p>© 2025 Krish Ajay Tiwari. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    fetch('https://api.github.com/users/krishxtiwari/repos')
+      .then(res => res.json())
+      .then(repos => {
+        const list = document.getElementById('github-repos');
+        repos.slice(0, 5).forEach(repo => {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="${repo.html_url}" target="_blank" class="hover:underline text-blue-300">${repo.name}</a>`;
+          list.appendChild(li);
+        });
+      })
+      .catch(() => {
+        document.getElementById('github-repos').textContent = 'Unable to load repositories.';
+      });
+
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) {
+                themeToggleBtn.textContent = ' Dark';
+            } else {
+                themeToggleBtn.textContent = ' Light';
+            }
+        });
+
+  </script>
+</body>
+</html>
